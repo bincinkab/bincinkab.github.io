@@ -1,0 +1,280 @@
+@import url('https://fonts.font.im/css?family=Lora|PT+Serif|Playfair+Display|Roboto+Mono:300,400');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lora|PT+Serif|Playfair+Display|Roboto+Mono",sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    /* overflow: hidden; */
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: #111;
+}
+html::-webkit-scrollbar-thumb{
+    background: #29d9d5;
+}
+
+body{
+    background: #111;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 3rem 9%;
+}
+.heading{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.heading span{
+    color: #29d9d5;
+    font-size: 2rem;
+}
+.heading h1{
+    font-size: 4rem;
+    color: #fff;
+    /* margin-top: .5rem; */
+}
+
+/* .btn{
+    margin-top: 0;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #29d9d5;
+    border: .2rem solid #29d9d5;
+    cursor: pointer;
+    border-radius: 5rem;
+    background: none;
+}
+.btn:hover{
+    background: #29d9d5;
+    color: #111;
+} */
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+    
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    color: #aaa;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.navbar a:hover{
+    color: #29d9d5;
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bolder;
+}
+.logo i{
+    color:#29d9d5 ;
+    padding-right: .5rem;
+}
+
+
+#menu-btn{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+.gallery{
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+.gallery .box-container{
+    columns: 3 25rem;
+    column-gap: 1.5rem;
+}
+.gallery .box-container .box{
+    margin-bottom: 1rem;
+    break-inside: avoid; /*解决瀑布流图片队列文字换列问题 ,防止多余的文字到下一列*/
+}
+.gallery .box-container .box img{
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.gallery .box-container .box span{
+    font-size: 1.4rem;
+    color: #aaa;
+}
+.gallery .box-container .box h3{
+    margin-top: .5rem;
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+
+.videoplay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    /* z-index: -11; */
+}
+source{
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 3rem 2rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    #menu-btn{
+       
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #222;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    }
+
+    .navbar a{
+        margin: 2rem;
+        font-size: 2rem;
+        display: block;
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    
+    
+    .videoplay{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    video{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+        width: auto;
+        /* z-index: -11; */
+    }
+    source{
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+        width: auto;
+    }
+    /* .gallery .box-container{
+        columns: 2 15rem;
+        column-gap: 1rem;
+    } */
+    /* .gallery .box-container .box{
+        margin-bottom: 1rem;
+         break-inside: avoid; 解决瀑布流图片队列文字换列问题 ,防止多余的文字到下一列
+    }
+    .gallery .box-container .box img{
+        width: 100%;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+    .gallery .box-container .box span{
+        font-size: 1.4rem;
+        color: #aaa;
+    }
+    .gallery .box-container .box h3{
+        margin-top: .5rem;
+        font-size: 2rem;
+        color: #fff;
+    
+    } */
+ 
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+
+      
+         <!-- 导航栏的开始 -->
+        <header class="header">
+
+            
+            <div id="menu-btn" class="fas fa-bars"></div>
+    
+            <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo">
+                <i class="fas fa-paper-plane"></i>
+                traver
+            </a>
+    
+            <nav class="navbar">
+                <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a>
+                <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">about</a>
+                <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination">destination</a>
+                <a data-aos="zoom-in-left" data-aos-delay="750" href="#services">services</a>
+                <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">gallery</a>
+                <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">blogs</a>
+            </nav>
+    
+            <!-- <a data-aos="zoom-in-left" data-aos-delay="1300" href="#book-form" class="btn">book now</a> -->
+        </header>
+        <!-- 导航栏的结束 -->
+
+        
+    <!-- 图片展示瀑布流开始 -->
+    <section class="gallery" id="gallery">
+
+        <div class="heading">
+            <span>our gallery</span>
+            <h1>we record memories</h1>
+        </div>
+
+        <div class="box-container">
+            <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+                <img src="./img/1.jpeg" alt="">
+                <span>travel spot</span>
+                <h3>iceland</h3>
+            </div>
+       
+
+        
+            <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+                <img src="./img/1.png" alt="">
+                <span>travel spot</span>
+                <h3>greenland</h3>
+            </div>
+        
+
+       
+            <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+                <img src="./img/2.png" alt="">
+                <span>travel spot</span>
+                <h3>alska</h3>
+            </div>
+        
+
+       
+            <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+                <img src="./img/3.png" alt="">
+                <span>travel spot</span>
+                <h3>thailand</h3>
+            </div>
+      
+
+      
+            <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+                <img src="./img/4.png" alt="">
+                <span>travel spot</span>
+                <h3>brazil</h3>
+            </div>
+      
+
+       
+            <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+                <img src="./img/5.png" alt="">
+                <span>travel spot</span>
+                <h3>maldive</h3>
+            </div>
+        
+
+     
+            <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+                <img src="./img/1.jpeg" alt="">
+                <span>travel spot</span>
+                <h3>iceland</h3>
+            </div>
+
+
+            <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+                <img src="./img/3.png" alt="">
+                <span>travel spot</span>
+                <h3>alaska</h3>
+            </div>
+
+
+
+            <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+                <img src="./img/1.png" alt="">
+                <span>travel spot</span>
+                <h3>malack</h3>
+            </div>
+        </div>
+
+       
+
+    </section>
+    <!-- 图片展示瀑布流结束 -->
+
+            <!-- video -->
+            <div class="videoplay">
+                <video class="videoBG" autoplay="autoplay" muted loop="loop">
+                    <source src="./video/2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+
+        <script src="./js/aos.js"></script>
+        <script>
+           AOS.init({
+               duration:800,
+               offset:150,
+           });
+        </script>
+        <script src="./js/jQuery-3.6.0.min.js"></script>
+            <script>
+                $(window).on("load",function(){
+                    $(".videoplay").fadeOut(2000)
+                });
+        </script>
+</body>
+</html>
