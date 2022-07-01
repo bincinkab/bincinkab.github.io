@@ -227,6 +227,32 @@ source{
         font-size: 50%;
     }
     
+    .videoplay{
+        width: 80%;
+        height: 80%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    video{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 80%;
+        min-height: 80%;
+        height: auto;
+        width: auto;
+    
+    }
+    source{
+        min-width: 80%;
+        min-height: 80%;
+        height: auto;
+        width: auto;
+    }
+
     
    
     /* .gallery .box-container{
