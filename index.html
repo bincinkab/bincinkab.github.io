@@ -124,8 +124,8 @@
 
             <!-- video -->
             <div class="videoplay">
-                <video class="videoBG" src="./video/2.mp4" type="video/mp4" autoplay="autoplay" loop="loop" muted="muted" height="100%" width="100%">
-                    
+                <video class="videoBG" autoplay="autoplay" loop="loop" muted="muted" height="100%" width="100%">
+                    <source src="./video/2.mp4" type="video/mp4" />
                 </video>
             </div>
 
@@ -140,7 +140,7 @@
         <script src="./js/jQuery-3.6.0.min.js"></script>
             <script>
                 $(window).on("load",function(){
-                    $(".videoplay").fadeOut("normal")
+                    $(".videoplay").fadeOut(3000)
                 });
         </script>
 </body>
